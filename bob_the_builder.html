@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob the Builder</title>
+</head>
+<body>
+    <script>
+        let l = prompt("Enter the Length  L of the Wall")
+        let h = prompt("Enter the Height H of the Wall")
+        let t = prompt("Enter the Thickness T of the Wall")
+        let brickVolume = 24 * 12 * 8;
+        let requiredBricks = Math.round(0.85 * (l*h*t * 1000000) / brickVolume) // .85 is because 15 Percent is Mortar (100% - 15%)
+        console.log("Number of required bricks are " + requiredBricks)
+
+    </script>
+</body>
+</html>
