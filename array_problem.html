@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nitish Array Problem</title>
+  </head>
+
+  <body>
+    <script>
+      function rotateArray(arr, num) {
+        for (let i = 1; i <= num; i++) {
+          arr.unshift(arr.pop());
+        }
+        console.log(arr);
+      }
+
+      rotateArray([1, 2, 3, 4, 5], 2);
+      // function rotateArray(arr, num) {
+      //   for (var i = 1; i <= num; i++) {
+      //     var a = arr[0]; //first element
+      //     var b = arr[arr.length - 1]; //last element
+      //     var temp;
+
+      //     temp = a;
+      //     a = b;
+      //     b = temp;
+      //   }
+      //   console.log(arr);
+      // }
+
+      // function rotateArray(arr, num) {
+      //   while (num >= 1) {
+      //     var a = arr[0]; //first element
+      //     var b = arr[arr.length - 1]; //last element
+      //     var temp = 0;
+
+      //     temp = a;
+      //     a = b;
+      //     b = temp;
+
+      //     num--;
+      //   }
+
+      //   console.log(arr);
+      // }
+
+      rotateArray([1, 2, 3, 4, 5], 2);
+    </script>
+  </body>
+</html>
